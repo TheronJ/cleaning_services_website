@@ -1,0 +1,9 @@
+<section id="portfolio" class="ui-section ui-anchor">
+  <div class="ui-container">
+    <app-section-header kicker="Portfolio" title="CHECK OUR PORTFOLIO"></app-section-header>
+
+    <div class="portfolio-grid">
+      <img *ngFor="let img of images" [src]="img" alt="Cleaning job">
+    </div>
+  </div>
+</section>

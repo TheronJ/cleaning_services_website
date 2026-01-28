@@ -1,0 +1,102 @@
+<section id="contact" class="ui-section ui-anchor">
+  <div class="ui-container">
+    <app-section-header kicker="Contact" title="CHECK OUR CONTACT-US"></app-section-header>
+
+    <div class="contact-wrap">
+      <div class="ui-card ui-card-topline info-card">
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <strong>Contact Number</strong>
+            <span>0XX XXX XXXX</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">💬</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <a class="link"
+               [href]="'https://wa.me/27XXXXXXXXX?text=' + waText"
+               target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <span>info&#64;yourcleaningbusiness.co.za</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-card ui-card-topline form-card">
+        <form [formGroup]="form" (ngSubmit)="submit()">
+          <div class="form-grid">
+            <div>
+              <label>Your Name</label>
+              <input class="input" formControlName="name" placeholder="Full name">
+            </div>
+
+            <div>
+              <label>Your Email</label>
+              <input class="input" formControlName="email" placeholder="you&#64;email.com">
+            </div>
+
+            <div>
+              <label>Phone</label>
+              <input class="input" formControlName="phone" placeholder="07X XXX XXXX">
+            </div>
+
+            <div>
+              <label>Location</label>
+              <input class="input" formControlName="location" placeholder="Suburb & City">
+            </div>
+
+            <div>
+              <label>Property Type</label>
+              <select class="select" formControlName="propertyType">
+                <option>House</option>
+                <option>Apartment</option>
+                <option>Flat</option>
+              </select>
+            </div>
+
+            <div>
+              <label>Type of Cleaning</label>
+              <select class="select" formControlName="cleaningType">
+                <option>Regular</option>
+                <option>Deep</option>
+                <option>Move-in/out</option>
+                <option>Once-off</option>
+              </select>
+            </div>
+
+            <div style="grid-column: 1 / -1;">
+              <label>Preferred Date (optional)</label>
+              <input class="input" formControlName="preferredDate" type="date">
+            </div>
+
+            <div style="grid-column: 1 / -1;">
+              <label>Message</label>
+              <textarea class="textarea" formControlName="message" placeholder="Tell us about your home and what you need..."></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="ui-btn ui-btn-primary" type="submit" [disabled]="loading">
+              {{ loading ? 'Sending...' : 'Send Request' }}
+            </button>
+            <a class="ui-btn" style="background:#111827;color:#fff"
+               [href]="'https://wa.me/27XXXXXXXXX?text=' + waText"
+               target="_blank" rel="noopener">WhatsApp Instead</a>
+          </div>
+
+          <p class="msg ok" *ngIf="success">Thanks! We’ve received your request and will respond shortly.</p>
+          <p class="msg err" *ngIf="error">Sorry—something went wrong. Please WhatsApp us instead.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

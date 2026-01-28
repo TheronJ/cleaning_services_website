@@ -1,0 +1,27 @@
+.price-card{
+  padding: 26px;
+  border-radius: var(--radius-xl);
+}
+.featured{
+  border: 2px solid rgba(0,194,255,.35);
+  box-shadow: var(--shadow-2);
+  transform: translateY(-6px);
+}
+h3{
+  font-family:Poppins;
+  margin:0 0 6px;
+  font-size: 26px;
+}
+.tag{ margin:0 0 14px; color:#4b5563; font-weight:700; }
+.price{
+  font-family:Poppins;
+  font-weight:900;
+  font-size: 28px;
+  color:#0b3a57;
+  margin-bottom: 12px;
+}
+ul{ margin:0 0 18px; padding-left:18px; color:#4b5563; line-height:1.7; }
+.w100{ width:100%; }
+@media (max-width: 1000px){
+  .featured{ transform:none; }
+}

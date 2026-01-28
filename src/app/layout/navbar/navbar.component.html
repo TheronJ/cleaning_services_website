@@ -1,0 +1,58 @@
+<header class="nav">
+  <div class="ui-container nav-inner">
+    <a class="brand" (click)="go('home')" tabindex="0" role="button">
+      <div class="brand-logo">DT</div>
+      <div class="brand-text">
+        <strong>GAUTENG CLEAN CO</strong>
+        <span>Residential Cleaning Services</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" [class.open]="mobileOpen">
+      <a (click)="go('home')">Home</a>
+      <a (click)="go('about')">About us</a>
+      <a (click)="go('services')">Our Services</a>
+      <a (click)="go('team')">Team</a>
+      <a (click)="go('portfolio')">Portfolio</a>
+      <a (click)="go('contact')">Contact us</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="nav-cta" href="https://wa.me/27XXXXXXXXX?text=Hi%20I%27d%20like%20to%20book%20a%20cleaning%20or%20request%20a%20quote."
+         target="_blank" rel="noopener">Book on WhatsApp</a>
+
+      <button class="burger" (click)="mobileOpen = !mobileOpen" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<header class="nav">
+  <div class="ui-container nav-inner">
+    <a class="brand" (click)="go('home')" tabindex="0" role="button">
+      <div class="brand-logo">DT</div>
+      <div class="brand-text">
+        <strong>GAUTENG CLEAN CO</strong>
+        <span>Residential Cleaning Services</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" [class.open]="mobileOpen">
+      <a (click)="go('home')">Home</a>
+      <a (click)="go('about')">About us</a>
+      <a (click)="go('services')">Our Services</a>
+      <a (click)="go('team')">Team</a>
+      <a (click)="go('portfolio')">Portfolio</a>
+      <a (click)="go('contact')">Contact us</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="nav-cta" href="https://wa.me/27XXXXXXXXX?text=Hi%20I%27d%20like%20to%20book%20a%20cleaning%20or%20request%20a%20quote."
+         target="_blank" rel="noopener">Book on WhatsApp</a>
+
+      <button class="burger" (click)="mobileOpen = !mobileOpen" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>

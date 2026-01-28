@@ -1,0 +1,15 @@
+<section id="services" class="ui-section ui-anchor">
+  <div class="ui-container">
+    <app-section-header kicker="Services" title="CHECK OUR SERVICES"></app-section-header>
+
+    <div class="ui-grid-3">
+      <article class="service-card" *ngFor="let s of services">
+        <img [src]="s.img" [alt]="s.title">
+        <div class="service-overlay">
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.text }}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+.about-grid{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 26px;
+}
+.about-card{
+  padding: 26px;
+  border-radius: var(--radius-xl);
+}
+h3{
+  font-family:Poppins;
+  margin:0 0 10px;
+  font-size: 26px;
+}
+p, li{
+  color:#4b5563;
+  line-height:1.75;
+}
+ul{ margin:0; padding-left: 18px; }
+@media (max-width: 900px){
+  .about-grid{ grid-template-columns:1fr; }
+}
