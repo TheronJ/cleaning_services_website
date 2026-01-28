@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { SectionHeaderComponent } from '../../shared/section-header/section-header.component';
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [SectionHeaderComponent],
+  imports: [CommonModule, SectionHeaderComponent],
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss']
 })

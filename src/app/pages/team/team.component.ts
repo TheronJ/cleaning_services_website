@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { SectionHeaderComponent } from '../../shared/section-header/section-header.component';
 
 @Component({
   selector: 'app-team',
   standalone: true,
-  imports: [SectionHeaderComponent],
+  imports: [CommonModule, SectionHeaderComponent],
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss']
 })
