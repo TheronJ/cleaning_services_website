@@ -10,10 +10,10 @@ import { SectionHeaderComponent } from '../../shared/section-header/section-head
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent {
-  images = [
-    'assets/portfolio/1.jpg',
-    'assets/portfolio/2.jpg',
-    'assets/portfolio/3.jpg',
-    'assets/portfolio/4.jpg'
-  ];
+images = [
+  'assets/portfolio/1.png',
+  'assets/portfolio/2.png',
+  'assets/portfolio/3.png',
+  'assets/portfolio/4.png'
+];
 }

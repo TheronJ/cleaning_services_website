@@ -8,7 +8,7 @@
           <div class="info-icon">📞</div>
           <div>
             <strong>Contact Number</strong>
-            <span>0XX XXX XXXX</span>
+            <span>079 980 6638</span>
           </div>
         </div>
 
@@ -16,9 +16,12 @@
           <div class="info-icon">💬</div>
           <div>
             <strong>WhatsApp</strong>
-            <a class="link"
-               [href]="'https://wa.me/27XXXXXXXXX?text=' + waText"
-               target="_blank" rel="noopener">Chat on WhatsApp</a>
+           <a class="link"
+   [href]="'https://wa.me/' + waNumber + '?text=' + whatsappText"
+   target="_blank"
+   rel="noopener">
+  Chat on WhatsApp
+</a>
           </div>
         </div>
 
@@ -26,7 +29,7 @@
           <div class="info-icon">✉️</div>
           <div>
             <strong>Email</strong>
-            <span>info&#64;yourcleaningbusiness.co.za</span>
+            <span>support&#64;degurrutechnologies.co.za</span>
           </div>
         </div>
       </div>
@@ -89,7 +92,7 @@
               {{ loading ? 'Sending...' : 'Send Request' }}
             </button>
             <a class="ui-btn" style="background:#111827;color:#fff"
-               [href]="'https://wa.me/27XXXXXXXXX?text=' + waText"
+               [href]="'https://wa.me/27XXXXXXXXX?text=' + whatsappText"
                target="_blank" rel="noopener">WhatsApp Instead</a>
           </div>
 

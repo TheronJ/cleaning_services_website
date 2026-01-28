@@ -2,8 +2,8 @@
   padding: calc(var(--nav-h) + 78px) 0 76px;
   color:#fff;
   background:
-    radial-gradient(900px 400px at 70% 40%, rgba(0,194,255,.18), transparent 60%),
-    radial-gradient(700px 350px at 15% 20%, rgba(0,194,255,.10), transparent 55%),
+    radial-gradient(900px 400px at 70% 40%, #020508, transparent 60%),
+    radial-gradient(700px 350px at 15% 20%, #020508, transparent 55%),
     linear-gradient(180deg, var(--bg-dark), var(--bg-dark-2));
 }
 .hero-grid{
@@ -36,13 +36,6 @@ p{
 }
 .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; }
 
-.hero-visual{
-  background: rgba(255,255,255,.04);
-  border: 1px solid rgba(255,255,255,.10);
-  border-radius: var(--radius-xl);
-  padding:18px;
-  box-shadow: 0 30px 80px rgba(0,0,0,.45);
-}
 .hero-visual img{ width:100%; height:auto; display:block; }
 
 @media (max-width: 900px){

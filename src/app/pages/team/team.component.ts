@@ -15,13 +15,13 @@ export class TeamComponent {
       name: 'Lead Supervisor',
       role: 'Quality Lead • Scheduling',
       bio: 'Ensures every clean meets our quality checklist and client expectations.',
-      img: 'assets/team/supervisor.jpg'
+      img: 'assets/team/supervisor.png'
     },
     {
       name: 'Cleaning Professional',
       role: 'Residential Specialist',
       bio: 'Detail-focused cleaning for apartments, flats, and family homes.',
-      img: 'assets/team/cleaner.jpg'
+      img: 'assets/team/cleaner.png'
     }
   ];
 }

@@ -15,6 +15,7 @@ export class ContactComponent {
   loading = false;
   success = false;
   error = false;
+  waNumber = '27731168902'; // +27 73 116 8902 (no leading 0)
 
   form: ReturnType<FormBuilder['group']>;
 
@@ -55,7 +56,7 @@ export class ContactComponent {
     }
   }
 
-  get waText(): string {
+  get whatsappText(): string {
     return encodeURIComponent(
 `Hi 👋 I’d like to book a cleaning / request a quote.
 Location (Suburb & City): __________
@@ -68,4 +69,6 @@ Extras: oven / fridge / windows / cupboards
 Thank you!`
     );
   }
+
+  
 }

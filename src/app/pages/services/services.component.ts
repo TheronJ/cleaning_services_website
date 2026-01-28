@@ -14,17 +14,17 @@ export class ServicesComponent {
     {
       title: 'Regular Home Cleaning',
       text: 'Weekly or bi-weekly cleaning for houses, flats, and apartments.',
-      img: 'assets/services/regular.jpg'
+      img: 'assets/services/regular.png'
     },
     {
       title: 'Deep Cleaning',
       text: 'Top-to-bottom clean for a fresh reset and detailed shine.',
-      img: 'assets/services/deep.jpg'
+      img: 'assets/services/deep.png'
     },
     {
       title: 'Move-In / Move-Out Cleaning',
       text: 'Perfect for tenants, landlords, and property managers.',
-      img: 'assets/services/moveout.jpg'
+      img: 'assets/services/moveout.png'
     }
   ];
 }

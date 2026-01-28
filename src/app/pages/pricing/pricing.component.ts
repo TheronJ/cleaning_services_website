@@ -3,6 +3,7 @@ import { SectionHeaderComponent } from '../../shared/section-header/section-head
 import { ScrollService } from '../../core/services/scroll.service';
 
 
+
 @Component({
   selector: 'app-pricing',
   standalone: true,
