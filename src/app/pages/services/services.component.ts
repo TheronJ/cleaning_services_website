@@ -13,7 +13,7 @@ export class ServicesComponent {
   services = [
     {
       title: 'Regular Home Cleaning',
-      text: 'Weekly or bi-weekly cleaning for houses, flats, and apartments.',
+      text: 'Weekly cleaning for houses, flats, and apartments.',
       img: 'assets/services/regular.png'
     },
     {

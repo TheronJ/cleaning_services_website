@@ -44,7 +44,7 @@ body{
   margin-inline:auto;
 }
 .ui-section{
-  padding: 86px 0;
+  padding: 20px 0;
 }
 .ui-section--tight{ padding: 70px 0; }
 
@@ -71,7 +71,7 @@ body{
 .ui-h2{
   font-family:Poppins, Inter, system-ui;
   font-weight:800;
-  font-size: clamp(32px, 3.6vw, 56px);
+  font-size: clamp(32px, 0.6vw, 56px);
   letter-spacing:-.6px;
   margin: 10px 0 0;
 }
